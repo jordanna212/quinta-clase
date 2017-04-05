@@ -1,0 +1,56 @@
+body{padding-top:50px;
+background-color: #E0DED8;}
+
+:hover{
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-o-transition: color 0.5s ease-in-out;
+transition: color 0.5s ease-in-out; /*transición al superponer el mouse*/
+}
+
+::selection{background-color: pink;} cursor
+
+header{padding:2em 0;
+}
+header h1{
+  font-family: 'Anton', sans-serif;
+
+}
+header h2{font-weight:300;}
+
+
+article{padding-bottom:1.5em;}
+article h5 {padding-bottom:1em;}
+article h5 a{padding-right:1em;}
+article figure{
+  font-family: 'Anton', sans-serif;
+  margin-right:2em;
+  margin-bottom:1em;
+  margin-top:0.25em;
+  float:left;
+  width:40%;
+  height:auto;
+  overflow: hidden;
+}
+@media (max-width: 768px) /*sirve para que se adapte hasta un cierto punto*/{
+article figure{width:100%; padding-right:0; clear:both;}
+}
+/*esto de abajo sirve para pasar el cursor encima y que comience en gris y después
+se vuelva de color */
+article figure img{width:100%; height:auto;filter:grayscale(100%);}
+article:hover figure img{filter:grayscale(0);
+transform: scale(1.5)
+}
+aside{padding-top:0.5em;}
+
+aside h3{
+  margin-left:0.6em;
+  color:rgba(100,100,100,1);
+  font-size:1.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+footer{border-top:1px solid silver; padding:1em 0; margin:3em 0 0 0;}
